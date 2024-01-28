@@ -1,0 +1,17 @@
+{% extends 'main/obshi.html' %}
+
+{% block title %}new tablica{% endblock %}
+
+{% block ccc %}
+    <div class="features">
+        <h1>new tablica</h1>
+        <form method="post">{% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.anons }}<br>
+            {{ form.textfull }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">dobavit</button>
+        </form>
+    </div>
+{% endblock %}

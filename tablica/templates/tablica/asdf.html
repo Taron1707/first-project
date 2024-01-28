@@ -1,0 +1,20 @@
+{% extends 'main/obshi.html' %}
+
+{% block title %}text{% endblock %}
+
+{% block ccc %}
+    <div class="features">
+        <h1>text</h1>
+        {% if nn %}
+            {% for el in nn %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>>
+                    <h3>{{ el.anons }}</h3>>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>text</p>>
+        {% endif %}
+
+    </div>
+{% endblock %}
